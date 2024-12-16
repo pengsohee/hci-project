@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter';
+}
+
+
+/* Topbar */
+.topbar {
+    display: flex;
+    background-color: #cacaca;
+    height: 30px;
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+
+/* Title (left) */
+.navbar-title {
+    flex: 1;
+}
+
+.shop-name {
+    font-family: "Inter";
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Center Navbar */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 2;
+    align-items: center;
+    transform: translateX(-10%);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+}
+
+.nav-links a.active {
+    font-weight:bold;
+    text-decoration: underline;
+}
+
+
+.nav-links a:hover {
+    background-color: #cacaca;
+    border-radius: 100px;
+}
+
+/* Search Navbar (right) */
+.navbar-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 200px;
+}
+
+.search-icon {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    background-color: #cacaca;
+}
+  
+.about-text {
+    flex: 1;
+    font-size: 1.2em;
+    color: #000000;
+}
+  
+.about-text h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: bold;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+  
+.best-selling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    max-width: 400px;
+    text-align: center;
+    
+}
+  
+.best-selling img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    max-height: 500px;
+}
+  
+.best-selling-text {
+    font-size: 1.2em;
+}
+  
+.best-selling-text h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+  
+.best-selling-text p {
+    color: #666;
+}
+
+.explore {
+    background-color: transparent;
+    color: #000000;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+  
+.explore h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+  
+.explore p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+  
+.shop-now {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    width: 150px;
+}
+
+.botbar {
+    display: flex;
+    background-color: #cacaca;
+    height: 30px;
+    width: 100%;
+}
