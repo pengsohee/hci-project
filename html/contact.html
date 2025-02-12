@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SaffCoZ's Products</title>
+    <title>Contact Us - SaffCoZ</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Istok Web">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
     <link rel="stylesheet" href="../css/contact.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- header -->
@@ -34,5 +35,86 @@
             </a>
         </div>
     </div>
+
+    <!-- main body -->
+    <h2>REACH US FOR FURTHER INFORMATION</h2>
+
+    <section class="contact-section">
+        <!-- Left: Personal Information -->
+        <div class="personal-info">
+            <h3>PERSONAL INFORMATION</h3>
+            <form id="contact-form" method="POST">
+
+                <input type="text" id="first-name" placeholder="first name" required>
+                <input type="text" id="last-name" placeholder="last name" required>
+                <input type="text" id="phone-number" placeholder="phone number" required>
+                <input type="text" id="gender" placeholder="gender" required>
+                <input type="email" id="email" placeholder="email" required>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">I would like to receive the latest news, exclusive offers, and updates on new product releases from SaffCoZ.</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="error-message" style="color: red; margin-top: 10px;"></div>
+            <div id="success-message" class="success-notice"></div>
+        </div>
+
+        <!-- Right: Contact Information -->
+        <div class="contact-info">
+            <h3>CONTACT INFORMATION</h3>
+            <div class="contact-item">
+                <p>
+                    <i class="fab fa-instagram" style="font-size:24px"></i>
+                    <span class="text"><strong>@saffcoz.id</strong></span>
+                </p>
+            </div>
+            <div class="contact-item">
+                <p>
+                    <i class="fab fa-facebook-f" style="font-size:24px"></i>
+                    <span class="text"><strong>@saffcoz.id</strong></span>
+                </p>
+            </div>
+            <div class="contact-item">
+                <p>
+                    <i class="fab fa-whatsapp" style="font-size:24px"></i>
+                    <span class="text"><strong>+62-811-1234-567</strong></span>
+                </p>
+            </div>
+            <div class="contact-item">
+                <p>
+                    <i class="fab fa-twitter" style="font-size:24px"></i>
+                    <span class="text"><strong>@saffcoz.id</strong></span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <h2>Want to explore more?</h2>
+        <p>Discover our full range of fragrances and find your perfect scent today!</p>
+        <a href="./products.html">
+            <button class="shop-now">SHOP NOW</button>
+        </a>
+    </section>
+
+    <div class="botbar">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-icons">
+                <a href="../html/contact.html" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="../html/contact.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="../html/contact.html" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/contact.js"></script>
 </body>
 </html>

@@ -185,3 +185,171 @@ body {
     height: 30px;
     width: 100%;
 }
+
+.botbar {
+    display: flex;
+    background-color: #cacaca;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-title {
+        font-size: 1.6em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: none;
+    }
+
+    .nav-links a {
+        padding: 8px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .about-text h2 {
+        font-size: 1.4em;
+    }
+
+    .best-selling {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .best-selling img {
+        max-height: 400px;
+    }
+
+    .explore h2 {
+        font-size: 1.8em;
+    }
+
+    .explore p {
+        font-size: 1.1em;
+    }
+
+    .shop-now {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .navbar-title {
+        font-size: 1.4em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: none;
+    }
+
+    .nav-links a {
+        padding: 10px 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .search-input {
+        width: 120px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 1.3em;
+    }
+
+    .best-selling {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .best-selling img {
+        max-height: 300px;
+    }
+
+    .explore h2 {
+        font-size: 1.6em;
+    }
+
+    .explore p {
+        font-size: 1em;
+    }
+
+    .shop-now {
+        width: 100%;
+    }
+}

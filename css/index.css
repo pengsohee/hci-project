@@ -1,12 +1,13 @@
-*{
+/* General Styles */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
 }
-
 
 /* Topbar */
 .topbar {
@@ -26,19 +27,17 @@ body {
     justify-content: space-between;
 }
 
-/* Title (left) */
 .navbar-title {
     flex: 1;
 }
 
 .shop-name {
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     font-size: 1.8em;
     font-weight: bold;
     margin: 0;
 }
 
-/* Center Navbar */
 .nav-links {
     display: flex;
     justify-content: space-around;
@@ -57,7 +56,7 @@ body {
 }
 
 .nav-links a.active {
-    font-weight:bold;
+    font-weight: bold;
     text-decoration: underline;
 }
 
@@ -66,7 +65,6 @@ body {
     border-radius: 100px;
 }
 
-/* Search Navbar (right) */
 .navbar-icon {
     display: flex;
     align-items: center;
@@ -102,7 +100,7 @@ body {
 
 .banner-title {
     margin: 0;
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
     letter-spacing: 1px;
     font-weight: 900;
     font-size: 2em;
@@ -112,6 +110,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .banner-item {
@@ -139,13 +138,14 @@ body {
     font-weight: 600;
     border-radius: 50px;
     width: 150px;
-  }
+}
 
 /* Product Section */
 .product-section {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
 /* Product Items */
@@ -159,11 +159,12 @@ body {
     border-radius: 10px;
     box-sizing: border-box;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .product-text {
     flex: 1;
-    padding: 20;
+    padding: 20px;
     background-color: transparent;
     display: flex;
     flex-direction: column;
@@ -215,6 +216,145 @@ body {
 .botbar {
     display: flex;
     background-color: #cacaca;
-    height: 30px;
+    height: 60px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(0);
+        padding: 0;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .banner-items {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner-item {
+        max-width: 90%;
+    }
+
+    .product-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+    .product-text {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner-items {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-item {
+        max-width: 100%;
+    }
+
+    .product-item {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .product-image img {
+        width: 100%;
+    }
+
+    .product-info {
+        margin-top: 10px;
+    }
+
+    .product-text {
+        padding: 10px;
+    }
+}
+
